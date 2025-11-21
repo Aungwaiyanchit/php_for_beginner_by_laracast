@@ -1,0 +1,15 @@
+<?php
+
+use Core\Container;
+use Core\App;
+use Core\DataBase;
+
+$container = new Container;
+
+$container->bind('Core\DataBase', function () {
+  $config = require base_path('config.php');
+  return new DataBase($config['database']);
+});
+
+App::setContainer($container);
+

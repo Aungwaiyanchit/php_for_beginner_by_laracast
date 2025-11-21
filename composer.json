@@ -1,0 +1,26 @@
+{
+  "name": "adan/demo",
+  "authors": [
+    {
+      "name": "Aung Wai Yan Chit",
+      "email": "awyc@mit.com.mm"
+    }
+  ],
+  "require": {
+    "illuminate/collections": "^12.39"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^4.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
